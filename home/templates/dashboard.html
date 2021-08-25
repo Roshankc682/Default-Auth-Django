@@ -1,0 +1,19 @@
+{% include "registration/header.html" %}
+
+
+<title>Index</title>
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+<h3>Dashboard page</h3>
+{% if user.is_authenticated %}
+<h3>You are authenticated as {{ user.username }}</h3>
+{% else %}
+<h3>You are not logged in </h3>
+{% endif %}
+
+</div>
+</div>
+</body>
+</html>
